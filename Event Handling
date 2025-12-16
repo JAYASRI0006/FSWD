@@ -1,6 +1,6 @@
-import { userState } from "react";
+import { useState } from "react";
 export default function EventHandlingExample(){
-    const[message,setMessage]=userState("");
+    const[message,setMessage]=useState("");
 const handleChange=(event)=> {
     setMessage(event.target.value)
 }
@@ -12,7 +12,7 @@ return<>
 }
 
 
-
+app.jsx
 import EventHandlingExample from "./form/EventHandlingExample";
 export default function App() {
   return<EventHandlingExample/>
