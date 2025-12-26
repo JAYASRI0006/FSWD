@@ -1,0 +1,16 @@
+export default function Notification() {
+  return (
+    <>
+      <h2>Task 18: Notification System</h2>
+      <button onClick={() => alert("New Notification")}>Notify</button>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import Notification from "./form/Notification";
+
+export default function App() {
+  return <Notification />;
+}
