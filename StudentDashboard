@@ -1,0 +1,24 @@
+import { useState } from "react";
+
+export default function StudentDashboard() {
+  const [view, setView] = useState("");
+
+  return (
+    <>
+      <h2>Task 21: Student Dashboard</h2>
+
+      <button onClick={() => setView("Students List")}>Students</button>
+      <button onClick={() => setView("Courses List")}>Courses</button>
+
+      <p>{view}</p>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import StudentDashboard from "./form/StudentDashboard";
+
+export default function App() {
+  return <StudentDashboard />;
+}
