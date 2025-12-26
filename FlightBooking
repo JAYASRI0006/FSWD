@@ -1,0 +1,23 @@
+export default function FlightBooking() {
+  const book = () => {
+    const name = prompt("Enter passenger name");
+    if (confirm(`Confirm booking for ${name}?`)) {
+      alert("Flight Booked Successfully");
+    }
+  };
+
+  return (
+    <>
+      <h2>Task 9: Flight Ticket Booking</h2>
+      <button onClick={book}>Book Ticket</button>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import FlightBooking from "./form/FlightBooking";
+
+export default function App() {
+  return <FlightBooking />;
+}
