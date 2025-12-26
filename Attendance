@@ -1,0 +1,35 @@
+import { useState } from "react";
+
+export default function Attendance() {
+  const [students, setStudents] = useState([
+    { name: "Aman", status: "Present" },
+    { name: "Riya", status: "Absent" },
+  ]);
+
+  const toggle = (i) => {
+    const data = [...students];
+    data[i].status =
+      data[i].status === "Present" ? "Absent" : "Present";
+    setStudents(data);
+  };
+
+  return (
+    <>
+      <h2>Task 7: Attendance Tracker</h2>
+      {students.map((s, i) => (
+        <p key={i}>
+          {s.name} - {s.status}
+          <button onClick={() => toggle(i)}>Toggle</button>
+        </p>
+      ))}
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import Attendance from "./form/Attendance";
+
+export default function App() {
+  return <Attendance />;
+}
