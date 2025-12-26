@@ -1,0 +1,29 @@
+import { useState } from "react";
+
+export default function Blog() {
+  const [comment, setComment] = useState("");
+  const [comments, setComments] = useState([]);
+
+  return (
+    <>
+      <h2>Task 19: Blog</h2>
+
+      <input onChange={(e) => setComment(e.target.value)} />
+      <button onClick={() => setComments([...comments, comment])}>
+        Add Comment
+      </button>
+
+      {comments.map((c, i) => (
+        <p key={i}>{c}</p>
+      ))}
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import Blog from "./form/Blog";
+
+export default function App() {
+  return <Blog />;
+}
