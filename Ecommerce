@@ -1,0 +1,21 @@
+import { useState } from "react";
+
+export default function Ecommerce() {
+  const [cart, setCart] = useState(0);
+
+  return (
+    <>
+      <h2>Task 20: E-Commerce</h2>
+      <button onClick={() => setCart(cart + 1)}>Add to Cart</button>
+      <p>Items in Cart: {cart}</p>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import Ecommerce from "./form/Ecommerce";
+
+export default function App() {
+  return <Ecommerce />;
+}
