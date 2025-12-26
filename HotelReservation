@@ -1,0 +1,23 @@
+export default function HotelReservation() {
+  const reserve = () => {
+    const days = prompt("Enter number of days");
+    if (confirm(`Reserve hotel for ${days} days?`)) {
+      alert("Reservation Confirmed");
+    }
+  };
+
+  return (
+    <>
+      <h2>Task 10: Hotel Reservation</h2>
+      <button onClick={reserve}>Reserve</button>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import HotelReservation from "./form/HotelReservation";
+
+export default function App() {
+  return <HotelReservation />;
+}
