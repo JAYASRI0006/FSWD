@@ -1,0 +1,20 @@
+export default function RoleLogin() {
+  const login = (role) => alert(`Logged in as ${role}`);
+
+  return (
+    <>
+      <h2>Task 15: Role Based Login</h2>
+
+      <button onClick={() => login("Admin")}>Admin</button>
+      <button onClick={() => login("User")}>User</button>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import RoleLogin from "./form/RoleLogin";
+
+export default function App() {
+  return <RoleLogin />;
+}
