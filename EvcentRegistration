@@ -1,0 +1,18 @@
+export default function EventRegister() {
+  return (
+    <>
+      <h2>Task 12: Event Registration</h2>
+      <button onClick={() => alert("Registered Successfully")}>
+        Register
+      </button>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import EventRegister from "./form/EventRegister";
+
+export default function App() {
+  return <EventRegister />;
+}
