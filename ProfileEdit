@@ -1,0 +1,30 @@
+import { useState } from "react";
+
+export default function ProfileEdit() {
+  const [name, setName] = useState("");
+
+  const save = () => {
+    if (!name) alert("Name required");
+    else alert("Profile Updated");
+  };
+
+  return (
+    <>
+      <h2>Task 13: Profile Editing</h2>
+
+      <input
+        placeholder="Enter name"
+        onChange={(e) => setName(e.target.value)}
+      />
+      <button onClick={save}>Save</button>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import ProfileEdit from "./form/ProfileEdit";
+
+export default function App() {
+  return <ProfileEdit />;
+}
