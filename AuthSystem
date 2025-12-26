@@ -1,0 +1,22 @@
+export default function AuthSystem() {
+  const auth = () => {
+    prompt("Enter password") === "1234"
+      ? alert("Access Granted")
+      : alert("Wrong Password");
+  };
+
+  return (
+    <>
+      <h2>Task 16: Authentication</h2>
+      <button onClick={auth}>Login</button>
+    </>
+  );
+}
+src/App.jsx
+jsx
+Copy code
+import AuthSystem from "./form/AuthSystem";
+
+export default function App() {
+  return <AuthSystem />;
+}
