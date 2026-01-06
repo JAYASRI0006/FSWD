@@ -1,0 +1,180 @@
+HOMEPAGE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>John Doe</h1>
+    <p>Web Developer & Designer</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello! I am John Doe, a passionate web developer creating clean and interactive websites. Explore my work and learn more about me.</p>
+        <a class="button" href="projects.html">See My Projects</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 John Doe. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
+ABOUT:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>John Doe</h1>
+    <p>Web Developer & Designer</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am a web developer specializing in creating responsive and interactive websites using HTML, CSS, and JavaScript. I love clean design, animations, and improving user experience.</p>
+        <p>Skills: HTML, CSS, JavaScript, Responsive Design, UI/UX</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 John Doe. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
+PROJECTS:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>John Doe</h1>
+    <p>Web Developer & Designer</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <h2>My Projects</h2>
+        <p>Below are some examples of my work. All projects use clean design, responsive layout, and animations.</p>
+        
+        <div class="projects">
+            <div class="section">
+                <h3>Project 1</h3>
+                <p>Portfolio Website with animations</p>
+            </div>
+            <div class="section">
+                <h3>Project 2</h3>
+                <p>Interactive Landing Page</p>
+            </div>
+            <div class="section">
+                <h3>Project 3</h3>
+                <p>Simple E-commerce Template</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 John Doe. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
+CONTACT:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>John Doe</h1>
+    <p>Web Developer & Designer</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="section">
+        <h2>Contact Me</h2>
+        <p>Email: johndoe@example.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+        <a class="button" href="index.html">Back to Home</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 John Doe. All rights reserved.
+</footer>
+
+</body>
+</html>
