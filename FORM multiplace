@@ -1,0 +1,66 @@
+form program 
+
+
+code steps
+
+
+npm init @angular myApp
+
+cd myApp
+
+code .
+
+npm install -g @angular/cli
+
+ng g c ReactiveForms/name-editor
+
+(paste all code)
+
+npm start
+
+
+
+app.ts
+
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { NameEditor } from './ReactiveForms/name-editor/name-editor';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet,NameEditor],
+templateUrl: './app.html',
+//template:"<h1>Hello World</h1>",
+  styleUrl: './app.css'
+})
+export class App {
+ title = 'myApp';
+}
+
+
+name-editor.html
+
+<label for="name"> Name:</label>
+<input type="text" id="name" [formControl]="name" placeholder="enter name">
+<p>value:{{name.value}}</p>
+
+
+name-editor.ts
+
+import { Component } from '@angular/core';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'app-name-editor',
+  imports: [ReactiveFormsModule],
+  templateUrl: './name-editor.html',
+  styleUrl: './name-editor.css',
+})
+export class NameEditor {
+  name=new FormControl('');
+}
+
+app.html
+
+<h1>Angular Reactive Forms</h1>
+<app-name-editor></app-name-editor>
